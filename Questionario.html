@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Questionário</title>
+        
+         <link rel="stylesheet" href="Questionario.css">
+
+	</head>
+	<body>
+    <header>
+			<div class="caixa">
+				<img src="imagens/Logo.png" width="200" height="100" alt="Logo Colégio Leonardo da Vinci">
+				
+				<nav>
+					<ul>
+						<li><a href="senha.html">Home</a></li>
+					</ul>
+				</nav>
+			</div>
+	</header>
+
+    <main>
+        <div class="formulario-container">
+
+            
+        	<form>
+        
+				 <label for="nomesobrenome" class="label-bloco">Nome Completo:</label>
+				<input type="text" id="nomesobrenome" class="input-padrao" required>
+				<p></p> 
+				
+				<label for="rg" >RG</label>
+				<input type="text" id="rg" class="menor" required placeholder="XX.XXX.XXX-X">
+
+				<label for="telefone" >Telefone</label>
+				<input type="tel" id="telefone" class="menor" required placeholder="(XX) XXXXX-XXXX">
+				<p></p> 
+				
+				<label for="cpf">CPF</label>
+				<input type="text" id="cpf" class="menor" required placeholder="XXX.XXX.XXX-XX">
+
+				<label for="data">Data de Nascimento</label>
+				<input type="date" id="data" class="menor" required>
+				<p></p> 
+
+				<label for="endereco" >Endereço</label>
+				<input type="text" id="endereco" class="menor" required>
+
+				<label for="bairro" >Bairro</label>
+				<input type="text" id="bairro" class="menor" required>
+				<p></p> 
+
+				<label for="casa" >Nº</label>
+				<input type="text" id="casa" class="menor" required>
+				<p></p>
+
+				<fieldset> 
+					<legend>Curso pretendido</legend>
+					<select>
+						<option>Tecnico desenvolvimento de sistemas</option>
+						<option>Enfermagem</option>
+						<option>Docente</option>
+					</select>
+				</fieldset>
+
+                <label class="checkbox"><input type="checkbox"> Gostaria de receber nossas novidades por email?</label>
+
+                <div class="termos-container">
+                    <p class="textotamanho">Declaro verdadeiras as informações acima e estar ciente que, em caso de classificação para o
+                    curso e efetivação de matrícula, o não comparecimento nas aulas nos primeiros (05) cinco dias
+                    úteis do início do curso implicará na exclusão automática da matrícula sendo necessário participar
+                    de novo processo seletivo para ingresso no curso pretendido.</p>
+                </div>
+
+               <label for="assinatura">Nome do(a) Responsável</label>
+			   <input type="text" id="assinatura" class="input-padrao" required>
+
+                <h2>Marque os documentos que você já separou:</h2>
+                <ul>
+					<li>Histórico escolar até o 8º ano e boletim do 9º ano</li>
+					<li>Original e Fotocópia da Certidão de Nascimento</li>
+					<li>RG e CPF do aluno</li>
+					<li>Conta de luz de outubro ou novembro (COPEL) ou água (SANEPAR)</li>
+					<li>Declaração de Vacinação (emitida pelo Posto de Saúde)</li>
+					<li>Número do Cartão NIS (se tiver Auxílio Brasil)</li>
+					<li>RG e CPF do(a) responsável</li>
+				</ul>
+
+                <div >
+                    <input type="submit" value="Enviar Formulário" class="Enviar">
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Rodapé -->
+    </footer>
+</body>
+</html>

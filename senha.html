@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Questionário</title>
+        
+         <link rel="stylesheet" href="Questionario.css">
+	</head>
+	<body>
+    <header>
+			<div class="caixa">
+				<img src="imagens/Logo.png" width="200" height="100" alt="Logo Colégio Leonardo da Vinci">
+				
+				<nav>
+					<ul>
+                        <li><a href="Questionario.html">Questionário</a></li>
+					</ul>
+				</nav>
+			</div>
+	</header>
+    <main>
+        <div class="formulario-container">
+            <!-- CORREÇÃO AQUI: Abrimos a tag form com o ID correto que o JavaScript precisa -->
+            <form id="meuFormulario">
+        
+				<label for="codigoInput" class="label-bloco">Nome Completo / Código de Acesso:</label>
+				<input type="text" id="codigoInput" class="input-padrao" required placeholder="Digite seu nome ou o código">
+        	
+                <p></p>
+                <input type="submit" value="Entrar" class="Enviar">
+            </form>
+        </div>
+    </main>
+
+    <!-- O SCRIPT JAVASCRIPT QUE FAZ A VALIDAÇÃO -->
+    <script>
+        const formulario = document.getElementById('meuFormulario');
+        const campoTexto = document.getElementById('codigoInput');
+
+        formulario.addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede a página de recarregar antes de testar
+
+            // Se o texto digitado for admin123, leva para o arquivo admin.html
+            if (campoTexto.value === 'admin123') {
+                window.location.href = 'admin.html'; 
+            } else {
+                // Caso contrário, dá o aviso e você pode decidir o que fazer
+                alert('Acesso comum ou nome de usuário padrão.');
+            }
+        });
+    </script>
+	</body>
+</html>

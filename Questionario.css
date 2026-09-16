@@ -1,0 +1,111 @@
+.caixa{
+  background-color: #333333;
+  padding: 20px 30px;
+}
+
+
+li{
+	font-size: 20px;
+}
+
+.textotamanho{
+	font-size: 20px;
+}
+
+nav{
+	position: absolute;
+	top: 60px;
+	right: 90px;
+}
+
+nav li{
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a{
+	text-decoration: none; /*remove o sublinhado*/
+	color: #000000;
+	font-size: 22px;
+	font-weight: bold; /*negrito*/
+	text-transform: uppercase;
+}
+
+.formulario-container {
+    background-color: #ededed; 
+    border: 1px solid #999999; 
+    width: 940px;               
+    margin: 30px auto;         
+    padding: 30px;             
+    box-sizing: border-box;     
+    border-radius: 8px;           
+ }
+
+table{
+	margin: 20px 0 40px;
+}
+
+thead{
+	background: #3f4046;
+	color: white ;
+	font-weight: bold;
+} 
+
+td ,th{
+	border: 1px solid #000000;
+	padding: 5px 20px;
+} 
+
+form{
+	margin: 40px 0; /*cima e baixo, laterais*/
+}
+
+form label {
+    display: inline-block;
+    width: auto;             /* Faz a label ter apenas o tamanho exato do texto dela */
+    min-width: 60px;         /* Garante um tamanho mínimo pequeno para alinhar de leve */
+    font-size: 20px;
+    margin: 0 10px 15px 0;   /* O 10px cria um espaço pequeno e perfeito entre a palavra e a caixa */
+    vertical-align: middle;
+
+}
+
+
+/* Configura o estilo padrão de todas as caixas de texto */
+form input {
+    display: inline-block;
+    padding: 10px;
+    margin: 0 35px 15px 0;      /* Espaço entre as linhas do formulário */
+    border: 1px solid #999999;
+    border-radius: 4px;
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho da caixa */
+    vertical-align: middle;
+}
+
+/*form input, form textarea{*/
+.input-padrao{	
+	padding: 10px;
+	width: 90%;
+}
+
+
+.Enviar{
+	width: 40%;
+	padding: 15px 0;
+	background: rgb(184, 153, 96);
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;
+	cursor: pointer;
+	/*CSS3 permite trabalhar com transições que antes só era possivel no javascript*/
+}
+.Enviar:hover{
+	background-color: darkorange;
+
+	/*transform: rotate(0.2deg)*/
+	/*a propriedade teransform do CSS3 .Permite adicionar uma serie de efeitos como aumento, rotação etc.*/
+	transform: scale(1.01);/*utiliza % como referencia 1,05= 105%*/
+	}

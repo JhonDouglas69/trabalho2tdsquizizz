@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Painel Admin - Ficha de Pontuação</title>
+    <link rel="stylesheet" href="Questionario.css">
+</head>
+<body>
+    <header>
+        <div class="caixa">
+            <img src="imagens/Logo.png" width="200" height="100" alt="Logo Colégio Leonardo da Vinci">
+            <nav>
+                <ul>
+                    <li><a href="Questionario.html">Sair / Voltar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="formulario-container">
+            <!-- Cabeçalho Oficial do Colégio baseado no Documento -->
+            <div style="text-align: center; border-bottom: 2px solid #000000; padding-bottom: 15px; margin-bottom: 20px;">
+                <p style="font-size: 22px; font-weight: bold; margin: 0 0 5px 0; text-transform: uppercase;">Colégio Estadual Leonardo da Vinci</p>
+                <p style="font-size: 14px; margin: 0; font-weight: bold;">Ensino Fundamental, Médio, Normal e Profissional</p>
+                <p style="font-size: 12px; margin: 5px 0 0 0; color: #555555;">Av. Salgado Filho, 175 - Centro Sul | Dois Vizinhos - Paraná</p>
+            </div>
+
+            <p style="font-size: 16px; font-weight: bold; text-align: center; margin-bottom: 25px; text-transform: uppercase; background-color: #ddd; padding: 8px;">
+                II – Ficha de Pontuação para Cursos Integrados ao Ensino Médio e Formação de Docentes
+            </p>
+
+            <form>
+                <!-- Usando os mesmos IDs padrão que você já conhece -->
+                <label for="nomesobrenome">Nome do(a) Candidato(a):</label>
+                <input type="text" id="nomesobrenome" class="input-padrao" required>
+                
+                <label for="rg">RG</label>
+                <input type="text" id="rg" class="menor" required placeholder="XX.XXX.XXX-X">
+
+                <label for="cpf">CPF</label>
+                <input type="text" id="cpf" class="menor" required placeholder="XXX.XXX.XXX-XX">
+                <p></p>
+
+                <!-- Campos específicos do topo da folha de admin -->
+                <label for="inscricao">Número da Inscrição:</label>
+                <input type="text" id="inscricao" class="menor" required>
+
+                <label for="cgm">CGM:</label>
+                <input type="text" id="cgm" class="menor">
+                <p></p>
+
+                <fieldset> 
+                    <legend>Curso pretendido</legend>
+                    <select>
+                        <option>Tecnico desenvolvimento de sistemas</option>
+                        <option>Enfermagem</option>
+                        <option>Docente</option>
+                    </select>
+                </fieldset>
+
+                <!-- TABELA DE PONTUAÇÃO (IGUAL AO DOCUMENTO) -->
+                <table style="width: 100%; border-collapse: collapse; margin: 30px 0;">
+                    <thead>
+                        <tr>
+                            <th style="text-align: left;">Critério de Avaliação</th>
+                            <th style="width: 150px; text-align: center;">Valor da Nota</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Beneficiário:</strong> Programas federais de transferência de renda (NIS)</td>
+                            <td style="text-align: center;"><input type="number" min="0" max="10" placeholder="0 ou 10" style="width: 80px; padding: 5px; text-align: center;"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Origem Escolar:</strong> Pontuação referente ao histórico escolar do Ensino Fundamental</td>
+                            <td style="text-align: center;"><input type="number" min="0" max="85" placeholder="0 a 85" style="width: 80px; padding: 5px; text-align: center;"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Médias do 9º Ano:</strong> Média aritmética das disciplinas (Língua Portuguesa e Matemática)</td>
+                            <td style="text-align: center;"><input type="number" min="0" max="100" placeholder="0 a 100" style="width: 80px; padding: 5px; text-align: center;"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Entrevista:</strong> Quando aplicada (Valor de 0 a 100)</td>
+                            <td style="text-align: center;"><input type="number" min="0" max="100" placeholder="0 a 100" style="width: 80px; padding: 5px; text-align: center;"></td>
+                        </tr>
+                        <tr style="background-color: #e0e0e0; font-weight: bold;">
+                            <td style="text-align: right; padding-right: 20px;">TOTAL GERAL DA PONTUAÇÃO:</td>
+                            <td style="text-align: center;"><input type="number" readonly placeholder="Total" style="width: 80px; padding: 5px; text-align: center; font-weight: bold; background-color: #fff;"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="margin-top: 25px;">
+                    <input type="submit" value="Salvar Pontuação" class="Enviar">
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Rodapé -->
+    </footer>
+</body>
+</html>
